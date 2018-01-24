@@ -27,7 +27,6 @@
         "assets/popper/popper.min.js",
         "assets/bootstrap/js/bootstrap.min.js"
       ],
-      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
