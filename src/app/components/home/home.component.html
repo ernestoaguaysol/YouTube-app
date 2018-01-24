@@ -1,5 +1,16 @@
 <div class="container main-container">
   <h1>Canal de YouTube</h1>
   <hr>
-  
+  <div class="card-columns" >
+
+    <div class="card animated fadeIn fast" *ngFor="let video of videos">
+      <img class="card-img-top" [src]="video.thumbnails.high.url" [alt]="video.title">
+      <div class="card-body">
+        <h5 class="card-title">{{video.title}}</h5>
+        <button (click)="verVideo(video)" 
+            type="button" class="btn btn-outline-primary btn-block">Ver video</button>
+      </div>
+    </div>
+
+  </div>
 </div>
